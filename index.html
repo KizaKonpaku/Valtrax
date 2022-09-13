@@ -3,107 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Styles  -->    
+    <link rel="stylesheet" href="assets/css/style.css">
+
      <!-- Boxicons CDN Link -->
-     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valtrax</title>
 </head>
 <body>
+
+<!--  === SIDEBAR === -->  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxs-joystick-button'></i>
+      <span class="logo-name">VALTRAX</span>
+    </div>
+
+    <div class="container">
+     <span class="ul-title">Menu</span>
+    </div>
+
+     <ul class="nav-links">
+
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links-name">Dashboard</span>
+          <span class="sub-menu blank">Dashboard</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="#" class="active">
+          <i class='bx bx-paper-plane'></i>       
+          <span class="links-name">Trending</span>
+          <span class="sub-menu blank">Trending</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-purchase-tag-alt'></i>
+         <span class="links-name">Offers</span>
+         <span class="sub-menu blank">Offers</span>
+        </a>
+      </li>
+     
+      <li>
+        <a href="#">
+          <i class='bx bxs-zap' ></i>
+          <span class="links-name">Newest Games</span>
+          <span class="sub-menu blank">Newest Games</span>
+        </a>
+      </li>
+      <li><a href="#">
+        <i class='bx bx-rocket'></i>
+        <span class="links-name">Explore</span>
+        <span class="sub-menu blank">Explore</span>
+      </a>
+     </li>
+     <li class="light-mode">
+      <a href="#">
+        <i class='bx bx-moon'></i>    
+        <span class="links-name">Dark Mode</span>
+        <span class="sub-menu blank">Dark Mode</span>
+       </a>
+    </li>
+     <li class="log_out">
+      <a href="#">
+        <i class='bx bx-log-out'></i>
+        <span class="links-name">Log out</span>
+        <span class="sub-menu blank">Log out</span>
+      </a>
+    </li>
+    </ul>
+  </div>
+
+
+  <div class="home-section">
+    <!--  === HEADER === -->  
     <header>
-        <div class="sidebar-button">
-            <i class='bx bx-menu sidebarBtn'></i>
-            <h1 class="logo">VALTRAX</h1>
+      <div class="sidebar-button">
+        <i class="bx bx-menu sidebarBtn"></i>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class="bx bx-search"></i>
+      </div>
+      <div class="profile-details">
+        <div class="cart-shopping">
+          <i class='bx bx-cart' ></i>
+          <span class="number-cart">0</span>
         </div>
-
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <i class='bx bx-search'></i>
-        </div>
-
-        <div class="profile">
-            <div class="cart-shopping">
-                <i class='bx bx-cart-alt'></i>
-            </div>
-            <img src="" alt="">
-            <span class="user-name">Kiza</span>
-            <i class='bx bx-chevron-down'></i>
-        </div>
-
+        <i class='bx bx-user-circle'></i>
+        <span class="user-name">User</span>
+      </div>
     </header>
-    <nav class="sidebar">
-        <div class="logo-details">
-<!--             aqui va el logo -->           
-        <span class="logo_name">VALTRAX</span>
-        </div>
-        <ul class="nav-explore">
-            <span>Explore</span>
-            <li>
-                <a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Trending games</span>
-              </a>
-            </li>
-            <li>
-                <a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Offers</span>
-              </a>
-            </li>
-            <li>
-                <a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Best solds</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Newest</span>
-              </a>
-            </li>
-        </ul>
-        <ul class="nav-category">
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Accion</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Aventura</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Casuales</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Estrategia</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Indie</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Multijugador</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Deportes</span>
-              </a>
-            </li>
-            <li><a href="#">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="link_name">Terror</span>
-              </a>
-            </li>
-        </ul>
-    </nav>
+
+    <!--  === HOME === -->  
+
+    <div class="home-content">
+      <h1>Recommend for you</h1>
+    </div>
+    
+    <script>
+     let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+    </script>
     
 </body>
 </html>
