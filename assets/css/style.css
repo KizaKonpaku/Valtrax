@@ -377,82 +377,73 @@ header .profile-details i{
 
 /* ==== HEADER ==== */
 .home-section .home-content{
-  position: relative;
-  padding-top: 20px;
-  margin-left: 15px;
-  margin-right: 20px;
+  padding-top: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   z-index: var(--z-layer-1);
   height: 100%;
 }
 
 .home-banner{
-  position: relative;
-
-  background: linear-gradient(90deg,
-  var(--first-color) 20%,
-  var(--second-color)
-);
-height: 300px;
-width: 100%;
+ height: 300px;
+ width: 100%;
+ border-radius: 1rem 1rem 0.5rem 0.5rem;
+ overflow: hidden;
 }
 
-.banner-container{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding: 5rem 1rem 0 2rem;
+.banner{
+  background-image:linear-gradient( 90deg, rgba(0, 0, 0, 0.8) 20%, transparent), url(../img/wallpaperflare.com_wallpaper\ \(10\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-content{
   display: flex;
-  justify-content: space-between;
 }
 
-.banner-container h1{
+.banner-content .banner-content-detail{
+  position: relative;
+  padding: 1rem 1rem 0 2rem;
   color: var(--white-color);
-  font-size: var(--h1-font-size);
+  width: 40%;
+  height: 300px;
+  background-color: hsla(4, 0%, 11%, 0.1);
+  backdrop-filter: blur(5px);
 }
 
-.banner-data p{
-  font-size: var(--small-font-size);
-  color: var(--white-color);
+.banner-content-detail h1{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semibold);
 }
 
-.banner-data{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-evenly;
-}
-
-.banner-data a{
-  padding: 7px;
-  background: #e4473c;
-  color: var(--white-color);
-  text-align: center;
-  width: 110px;
-  border-radius: 10px 2px 12px 1px;
+.banner-content-detail p{
+  color: var(--gray-color);
+  font-weight: var(--font-light);
   font-size: var(--normal-font-size);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
-.banner-data a .bx-chevrons-right{
-  padding-left: 2px;
-  font-size: 25px;
-  transition: all 0.3s ease;
-}
-
-.banner-data a:hover .bx-chevrons-right{
-  transform: translateX(4px);
-}
-
-.joystick-img{
+.banner-content-detail .banner-buttons{
   position: relative;
-  bottom: 30px;
-  right: 50px;
-  z-index: var(--z-layer-1);
-  width: 250px;
-  height: 250px;
+  top: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
+.banner-buttons .btn{
+  color: var(--white-color);
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  background: var(--second-color);
+  padding: 0.5rem;
+  border-radius: 2% 20% 4% 20%;
+}
+
+.banner-buttons .btn:hover{
+  background: var(--first-color);
+}
+
 
 /* ==== HOME CONTENT ==== */
 .section-title{
@@ -461,90 +452,3 @@ width: 100%;
   color: var(--gray-color);
 }
 
-.box-cards{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 300px;
-  padding: 10px;
-}
-
-.card-offers{
-  display: flex;
-  color: var(--white-color);
-  width: 420px;
-  background: var(--container-color);
-  border-radius: 20px 10px;
-  position: relative;
-  
-}
-
-.card-offers img{
-  width: 220px;
-  height: 270px;
-  border-radius: 3px;
-}
-
-.card-offers-data{
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px 0px 10px;
-}
-
-.card-offers-data h3{
-  font-weight: var(--font-semibold);
-  font-size: var(--h2-font-size);
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.card-offers-data p{
-  font-size: var(--small-font-size);
-  color: var(--gray-color);
-}
-
-.card-offers-data ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card-offers-data ul li{
-  border: 1px solid  var(--second-color);
- /*  linear-gradient(90deg,
-  var(--first-color),
-  var(--second-color)
-); */
-  font-size: var(--smaller-font-size);
-  font-weight: var(--font-light);
-background: var(--second-color);
-/*   border-radius: 7px 2px 7px 2px;
- */
- border-radius: 20px;  
- padding: 5px;
-}
-
-.card-offers a{
-  color: var(--white-color);
-  position: absolute;
-  background: linear-gradient(90deg,
-  var(--first-color),
-  var(--second-color)
-); ;
-  border-radius: 1rem 0 1rem 0;
-  right: 0;
-  bottom: 0;
-  padding: 0.35rem;
-}
-
-.data-numbers{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.card-offers a i{
-  font-size: 1.3rem;
-  margin-left: 0.3rem;
-}
