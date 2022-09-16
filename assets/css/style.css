@@ -462,14 +462,15 @@ width: 100%;
   color: var(--gray-color);
 }
 
-.box-cards{
+
+.offers-wrappers{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 600px;
-  padding: 0 4rem;
+  height: 800px;
+  padding: 2rem 4rem;
+  z-index: var(--z-fixed);
 }
 
 .card-offers{
