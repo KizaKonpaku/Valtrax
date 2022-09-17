@@ -375,7 +375,7 @@ header .profile-details i{
   color: var(--second-color);
 }
 
-/* ==== HEADER ==== */
+/* ==== HOME-BANNER ==== */
 .home-section .home-content{
   padding-top: 6rem;
   margin-left: 2rem;
@@ -445,10 +445,140 @@ header .profile-details i{
 }
 
 
-/* ==== HOME CONTENT ==== */
+/* ==== OFFERS ==== */
 .section-title{
   letter-spacing: 0.1rem;
   font-weight: var(--font-medium);
   color: var(--gray-color);
+  padding: 1.1rem 2rem;
 }
 
+.section-offers{
+  margin-top: 2rem;
+  border: 2px solid var(--container-color);
+  background: var(--container-color);
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
+ /*  height: 300px;  */
+}
+
+.offers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem 2rem ;
+}
+
+.offers-card{
+  height: 80%;
+  width: 250px;
+  background: var(--body-color);
+  border-radius: 1.3rem 1.3rem 0.5rem 0.5rem;
+  position: relative;
+  box-shadow: 5px 4px 16px rgba(0, 0, 0, 0.8);
+}
+
+.offers-card .img{
+  width: 100%;
+  position: relative;
+}
+
+.offers-card img{
+  width: 100%;
+  border-radius: 1.3rem 1.3rem 0.5rem 0.5rem;
+
+}
+
+.offers-card-detail{
+  padding: 0.1rem 1rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.offers-card-detail .prices{
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  margin-top: 0.4rem;
+}
+
+.offers-card-detail .title-offer{
+  font-size: var(--h3-font-size);
+  color: var(--white-color);
+  font-weight: var(--font-semibold);
+  width: 85%;
+}
+
+.offers-card-detail .prices .offer-price{
+  font-size: 1.7rem;
+ 
+}
+
+.offers-card-detail .prices .original-price{
+  position: absolute;
+  bottom: 28px;
+  right: 10px;
+  color: gray;
+}
+
+.offers-card-detail .prices .original-price:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  transform: rotate(10deg);
+  height: 6%;
+  width: 100%;
+  background: var(--gray-color);
+}
+
+.offers-card-detail .buttons-offers{
+  display: flex;
+  font-size: 2rem;
+  width: 45%;
+}
+
+.buttons-offers i{
+  margin-right: 1rem;
+  color: var(--second-color);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.buttons-offers i:hover{
+  color: var(--first-color);
+}
+
+.offers-card .discount{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  position: absolute;
+  color: white;
+  top: 135px;
+  right: 0;
+  padding: 0.5rem;
+  background:linear-gradient(120deg, var(--first-color) 10%, var(--second-color));
+  border-radius: 1rem 0.3rem 0 1rem;
+}
+
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .4rem;
+  border-radius: .5rem;
+  background-color: hsl(219, 8%, 38%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(219, 8%, 26%);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(219, 8%, 20%);
+}
